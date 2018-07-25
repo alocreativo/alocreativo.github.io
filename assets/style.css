@@ -1,0 +1,16 @@
+body {
+    background: white;
+    font-family: system-ui, sans-serif;
+}
+nav{
+  background-color: salmon;
+  display: flex;
+}
+
+nav a{
+  padding: 20px;
+}
+
+nav  a.active{
+  background:white;
+}
