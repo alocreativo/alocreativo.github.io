@@ -1,5 +1,5 @@
 body {
-    background: salmon;
+    background: lightsalmon;
     font-family: system-ui, sans-serif;
     font-size: 20px;
     margin: 2em;
@@ -25,12 +25,13 @@ nav a:hover{
   background: rgba(255, 255, 255, 0.4);
 }
 
-nav  a.active{
+nav a.active{
   background:white;
 }
 
 .cardgroup{
   display: flex;
+  flex-direction: column;
   margin-left: -10px;
   margin-right: -10px;
 }
@@ -48,4 +49,38 @@ nav  a.active{
 .card:hover {
   box-shadow: 0 3px 0  3px rgba(0,0,0,0.5);
   transform: scale(1.05);
+}
+
+
+@media (min-width: 100px) {
+  body {
+    background: lightpurple;
+    margin: 1em;
+  }
+}
+
+@media (min-width: 500px) {
+  body {
+    background: lightyellow;
+  }
+}
+
+@media (min-width: 820px) {
+  body {
+    background: lightblue;
+    display: flex;
+  }
+
+  nav  {
+    flex-direction: column;
+    margin-right: 40px;
+  }
+
+  nav a {
+    padding: 20pc 40px:
+
+  }
+  .cardgroup {
+    flex-direction: row;
+  }
 }
